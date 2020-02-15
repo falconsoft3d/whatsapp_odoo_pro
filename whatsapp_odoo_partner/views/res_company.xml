@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <record id="base_view_company_form" model="ir.ui.view" >
+        <field name="name">base.view.company.form</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="model">res.company</field>
+        <field name="arch" type="xml">
+            <field name="phone" position="after">
+                <field name="token_whatsapp" string="Token Whatsapp" placeholder="https://eu102.chat-api.com/instance99645/sendMessage?token=iwu09tzu212lk"/>
+            </field>
+        </field>
+    </record>
+    </data>
+</odoo>
